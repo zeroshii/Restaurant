@@ -75,7 +75,7 @@
       console.log(tableData)
       
       
-      const result = await postUrl( 'http://localhost:3000/api/tables/reserve', tableData )
+      const result = await postUrl( '/api/tables/reserve', tableData )
       document.querySelector('#tableMessage').textContent = result.message
 	}
   </script>
